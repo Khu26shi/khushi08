@@ -1,0 +1,117 @@
+*{
+box-sizing: border-box;
+margin: 2px;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode',
+ Geneva, Verdana, sans-serif;
+
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: darkslategray;
+}
+header{
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+header h1{
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: chocolate;
+    margin-bottom: 1rem;
+}
+#new-task-form{
+    display: flex;
+}
+#new-task-input{
+    flex: 1 1 0%;
+    background-color: cornsilk;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-right: 2rem;
+    color: rgb(5, 5, 4);
+    font-size: 2rem;
+
+}
+
+#new-task-input ::placeholder{
+    color: darkolivegreen;
+
+}
+#new-task-submit{
+    color: rgba(64, 11, 212, 0.781);
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#new-task-submit:hover{
+    opacity: 0.8;
+}
+#new-task-submit:active{
+    opacity: 0.7;
+}
+main{
+    flex: 1 1 0%;
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+}
+.task-list{
+    padding: 2rem;
+}
+.task-list h2{
+    font-size: 2rem;
+    font-style: italic;
+    color: bisque;
+    margin-bottom: 1rem;
+}
+
+.task{
+    display: flex;
+    justify-content: space-between;
+    background-color: dimgrey;
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+.task.content.text{
+    color: rgb(29, 228, 228);
+    font-size: 2rem;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+}
+.task.content.text:not(:read-only){
+    color: blueviolet;
+
+}
+.task.actions{
+    display: flex;
+    margin: 0-0.5rem;
+}
+.task.actions button{
+    cursor: pointer;
+    margin: 0 0.5rem;
+    font-size: 1.125rem;
+    font-weight: 700;
+    text-transform: lowercase;
+    transition: 0.4;
+
+}
+.task.actions button:hover{
+    opacity: 0.8;
+
+}
+.task.actions button:active{
+    opacity: 0.6;
+}
+.actions.edit{
+    color: blueviolet;
+}
